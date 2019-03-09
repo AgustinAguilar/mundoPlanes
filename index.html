@@ -118,12 +118,12 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="inputI">
-                                            <input id="Codigo" name="Codigo" type="text" class="form-control" placeholder="Codigo">
+                                            <input style="text-transform:uppercase" id="Codigo" name="Codigo" type="text" maxlength="4" class="form-control" placeholder="Codigo">
                                             <i class="fas fa-key">
                                             </i>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn" style="background-color:#09ae39">
+                                    <button type="submit" class="btn" style="background-color:#09ae39" onclick="submit(nombre, Codigo)">
                                         <i class="fas fa-angle-right"></i>Realizar analisis crediticio<br />
                                     </button>
                                 </form>
@@ -232,6 +232,7 @@
       ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/validate.js"></script>
+    <script src="js/submit.js"></script>
 
 </body>
 </html>
