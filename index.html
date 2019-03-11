@@ -18,6 +18,7 @@
   <link href="css/jquery.bxslider.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
 
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
   <!-- Theme skin -->
   <link href="color/default.css" rel="stylesheet" />
 
@@ -123,8 +124,8 @@
                                             </i>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn" style="background-color:#09ae39" onclick="submit(nombre, Codigo)">
-                                        <i class="fas fa-angle-right"></i>Realizar analisis crediticio<br />
+                                    <button type="submit" class="btn" style="background-color:#09ae39" ">
+                                        <i class="fas fa-angle-right"></i><a href="#openModal">Realizar analisis crediticio</a><br />
                                     </button>
                                 </form>
                             </div>
@@ -135,7 +136,113 @@
                 </div>
                 <form action="gmail2.php" method="POST"></form>
             </div>
+
+           
         </section>
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <div stlye="position:relative"><h2></h2></div>
+                <div data-animate="fadeInUp" class="container">
+                    <div class="row">
+                      <div class="span12" style="width:100%;">
+                        <!-- Packages Start-->
+                        
+                          <!-- / END FIRST PACKAGE-->
+                          <div class="span4" style="width:26%;padding-top:4px;">
+                            <div class="package" style="border: 1px solid rgba(252, 14, 14, 0.801);height: 400px;">
+                              <div class="package-header light-gray" style="background: rgba(252, 14, 14, 0.432);" >
+                                <div class="content">
+                                    <h5 style="color:black;">Plan de ahorro</h5>    
+                                    <div class="meta-text">(Otros)</div>
+                                </div>
+                                
+                              </div>
+                              <div class="price">
+                                <div class="price-container d-flex align-items-end justify-content-center">
+                                  <h4 class="h1"><span class="currency"></span>168</h4><span class="period">personas inscriptas</span>
+                                </div>
+                              </div>
+                              <ul class="list-unstyled" style="list-style:none;text-align:left;padding:0 0px">
+                                <li><i class="fa fa-times" style="color:red"></i>Retiro por sorteo y licitacion</li>
+                                <li><i class="fa fa-times" style="color:red"></i>Poca seguridad</li>
+                                <li><i class="fa fa-times" style="color:red"></i>Cuota reajustable con la inflacion</li>
+                                <li><i class="fa fa-times" style="color:red"></i>Solicitan recibo de sueldo y 2 garantes</li>
+                                
+                                <li><i class="fa fa-times" style="color:red"></i>Gastos administrativos</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="span4" style="width:26%" >
+                              <div class="package" style="border: 1px solid rgba(20, 238, 39, 0.801);">
+                                <div class="package-header light-gray" style="background: rgba(14, 252, 46, 0.432); ">
+                                  <div class="content">
+                                    <h5 style="color:black;">Promocion de fabrica</h5>
+                                    <div class="meta-text">(Nosotros)</div>
+                                  </div>
+                                </div>
+                                <div class="price-container d-flex align-items-end justify-content-center" style="margin-bottom:0px;">
+                                  <h4 class="h1"><span class="currency"></span>Solo vos</h4><span class="period"></span>
+                                </div>
+                                <ul class="list-unstyled" style="list-style:none;text-align:left;padding:0 10px">
+                                  <li><i class="fa fa-check" style="color:rgb(44, 248, 71)"></i>Entrega pactada por contrato</li>
+                                  <li><i class="fa fa-check" style="color:rgb(44, 248, 71)"></i>4° Cuota con 25%</li>
+                                  <li><i class="fa fa-check" style="color:rgb(44, 248, 71)"></i>6° Cuota tomando tu usado</li>
+                                  <li><i class="fa fa-check" style="color:rgb(44, 248, 71)"></i>10° Cuota sin integracion </li>
+                                  <li><i class="fa fa-check" style="color:rgb(44, 248, 71)"></i>Cuota estable tasa 0% de interes</li>
+                                  <li><i class="fa fa-check" style="color:rgb(44, 248, 71)"></i>Sin recibo de sueldo ni garantes</li>
+                              </div>
+                            
+                          </div>
+                          <div class="span4" style="padding-bottom:20px;width:40%;background-color:rgba(201, 201, 201, 0.404);margin-top:24px;border-radius:8px;">
+                            <div style="padding:30px 100px 0;position:relative">
+                                <h4 style="font-size: 27px;">Supervisor de ventas</h4>
+                            </div>
+                            <div>
+                                <div class="span2">
+                                    <h4 style="padding:15px 0 0">Camila Lopez</h4>
+                                    <h4>DNI   39.421.445</h4>
+                                    <h4>CUIT   20-5</h4>
+                                </div>
+                                <div class="span2">
+                                    <img src="img/supervisora.jpg" >
+                                </div>
+                                <div style="padding:0px 185px 0;position:relative;top:15px;">
+                                    <h4 style="font-size: 27px;">Cliente</h4>
+                                </div>
+                                <div style="padding:10px 32px 0">
+                                    <h4>Nombre completo cliente</h4>
+                                    <h4>DNI 11.111.111</h4>
+                                    <h4>CUIT 11-11</h4>
+                                </div>
+                            </div>
+
+                            
+                                <div style="padding-top:10px;">
+                                    <h4 style="padding-left:21px;">Importantes bonificaciones para clientes de:</h4>
+                                    <div class="span2">
+                                    <img src="img/tarjetas.png" style="height:150px;margin-left:5px;">
+                                    </div>
+                                    <div class="span2">
+                                        <div class="boton-todopago-css" style="padding-top:40px;">
+                                            <a target="_blank" href='https://www.mercadopago.com/mla/checkout/start?pref_id=159295555-12972076-f6da-46b7-adc7-c56d0b5c7700'>
+                                              <div class="col-md-4 col-sm-4 col-xs-12 boton" id="htmlBoton" style="display: block;">
+                                                <input type="button" id="vistaPreviaBoton" class="btn aviso-boton-texto disabled" value="Ingresar" style="border-radius:5px;border: 1px solid rgb(18, 12, 12); width: 110px; height: 45px; background-color: rgb(82, 155, 238); font-family: Arial;color: rgb(0, 0, 0);">
+                                              </div>
+                                            </a>
+                                          </div>
+                                    </div>
+                                </div>
+
+                            
+                          </div>
+                          
+                        <!-- Packages End-->
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
 
         <section class="promocion">
             <div class="disponible">
