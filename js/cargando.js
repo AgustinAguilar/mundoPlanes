@@ -12,3 +12,11 @@ constructor() {
    }, delay);
  }
 }
+function submit(delay) {
+    debbuger;
+    }
+function cargar(delay){
+    var aux = new Object();
+    aux.show();
+    aux.hide(delay);
+}
