@@ -1,0 +1,7 @@
+  IdConsulta=132&TipoConsulta=1&Doc=40639794&MaxRows=1&User=62304&Password=253864
+<IdConsulta>132</IdConsulta> 
+<TipoConsulta>1</TipoConsulta> 
+<Doc>40639794</Doc> 
+<MaxRows>1</MaxRows> 
+<User>62304</User> 
+<Password>253864</Password> 
